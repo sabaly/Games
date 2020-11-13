@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <img class="car" src="img/racecar.png"/>
+
+    <div class="game_over">
+        <h1 class="alert_over">G A M E   O V E R   ! <br>
+            Score :  <span class="score">0</span>
+        </h1>
+        <button class="play">Play</button>
+        <button class="cancel">Quit</button>
+    </div>
+    <div class="dashboard">
+        <h1>GAME : Car</h1>
+        <p>
+            <ul class="consignes">
+                <li>Directions to move left, right, top or button</li>
+                <li>Space to jump over a car</li>
+                <li>0 to pause</li>
+            </ul>
+
+            Score : <span class="score">0</span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="roads">
+            <div class="road">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="road">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="road">
+                
+                <div class="line"></div>
+                
+                <div class="line"></div>
+                
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    <audio src="bgmusic.mp3" id="bgmusic"></audio>
+    <audio src="a.mp3" id="amusic"></audio>
+    <audio src="crash.mp3" id="crashmusic"></audio>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
