@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
 </head>
 <body>
     <img class="car" src="img/racecar.png"/>
 
-    <div class="game_over">
-        <h1 class="alert_over">G A M E   O V E R   ! <br>
+    <div class="alert_over">
+        <h1>G A M E   O V E R   ! <br>
             Score :  <span class="score">0</span>
         </h1>
+    </div>
+
+    <div class="game_over">
         <button class="play">Play</button>
+        <button class="replay">Restart</button>
         <button class="cancel">Quit</button>
     </div>
+
+    <div class="directions">
+        <i class="up icofont-circled-up"></i>
+        <div class="left-right-middle">
+            <i class="left icofont-circled-left"></i>
+            <div class="middle">zoom</div>
+            <i class="right icofont-circled-right"></i>
+        </div>
+        <i class="down icofont-circled-down"></i>
+    </div>
+
     <div class="dashboard">
         <h1>GAME : Car</h1>
         <p>
@@ -25,7 +41,8 @@
                 <li>0 to pause</li>
             </ul>
 
-            Score : <span class="score">0</span>
+            Score : <span class="score">0</span><br/>
+            <span>Best Score : <span class="bestScore"></span></span>
         </p>
     </div>
     <div class="container">
@@ -57,9 +74,9 @@
 
     
 
-    <audio src="bgmusic.mp3" id="bgmusic"></audio>
+    <audio src="bgmusic.mp3" id="bgmusic" loop></audio>
     <audio src="a.mp3" id="amusic"></audio>
     <audio src="crash.mp3" id="crashmusic"></audio>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
