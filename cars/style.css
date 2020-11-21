@@ -202,26 +202,36 @@ button {
 
 @media screen and (max-width: 768px){
     .directions {
+        height: 20vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-
+        bottom: 0;
+        right: 30px;
+    }
+    .directions i {
+        font-size: 40px;
+    }
+    .middle {
+        width: 40px;
+        height: 40px;
+        font-size: 1px;
+        background-color: rgba(255, 255,255, 0.7);
+        border-radius: 50%;
     }
 
     .left-right-middle {
         display: flex;
         justify-content: space-between;
     }
-
-    .middle {
-        width: 30px;
-        height: 30px;
-        font-size: 1px;
-        background-color: rgba(255, 255,255, 0.7);
-        border-radius: 50%;
+    .left-right-middle *{
+        margin-left: 5px;
     }
+
+
+    
 
     .alert_over {
         font-size: 14px;

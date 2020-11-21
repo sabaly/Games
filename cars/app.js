@@ -304,6 +304,7 @@ function game_over(car) {
     let position = '46.25%';
     replayBtn.style.display = 'block';
     cancelBtn.style.display = 'block';
+    
     if(window.innerWidth <= 768){ position = '36.25%';}
     replayBtn.addEventListener('click', function() {
         window.location.reload();
